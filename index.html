@@ -2,9 +2,102 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <title>portfolio</title>
+    <meta name="description" content="portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>HTML Test</p>
+
+<header>
+    <h1>たいとる</h1>
+</header>
+
+<article>
+    <section>
+        <h2>自己紹介</h2>
+        <p>某高専2年生</p>
+        <p>毎日課題に追われながら色んなことをしてるひとです．</p>
+    </section>
+
+    <section>
+        <h2>勉強中/勉強したいもの</h2>
+        <ul>
+            <li>深層学習(特に自然言語処理)</li>
+            <li>ブロックチェーン</li>
+            <li>VR・AR</li>
+            <li>Unity</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>趣味</h2>
+        <ul>
+            <li>電子工作</li>
+            <li>自作PC</li>
+            <li class="green">misskey</li>
+        </ul>
+        <p>などなど...</p>
+    </section>
+
+    <section>
+        <h2>最近作っているもの</h2>
+        <h4>・トラッカー</h4>
+        <p>VRで使えるトラッカーを自作しています．</p>
+        <p>以下のサイトを参考にしました．</p>
+        <a href="https://note.com/kirisamenanoha/n/n7e85548d2712">https://note.com/kirisamenanoha/n/n7e85548d2712</a>
+        <p></p>
+        <div class="image">
+            <img src="images/tracker.jpg" alt="tracker">
+            <p>こんなの</p>
+        </div>
+        <h4>・赤石計算機</h4>
+        <p>minecraftでレッドストーン(赤石)を使って，四則演算のできる総無遅延計算機を作っています．</p>
+        <p>つい最近データが飛んだので1から...</p>
+        <div class="image">
+            <img src="images/minecraft-calclator.png" alt="minecraft calculator">
+            <p>こんなの．手前に写っているのがバス，奥が32bit加算器と32bit減算器．</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>過去作ったもの(新しいもの順)</h2>
+        <h4>小さな部屋(VR world)</h4>
+        <p>VRChat(VRプラットフォーム)上で入ることを想定した部屋．</p>
+        <p>照明on/offや可変コライダー，動画プレイヤーなどのギミックも導入しているので，そこそこ住環境の良い場所になっている．</p>
+        <div class="image">
+            <img src="images/vrroom.png" alt="vr room">
+            <p>部屋．</p>
+        </div>
+        <p>見ての通り，現時点では借り物のアセットで構成されている．(モデリング技術力不足)</p>
+        <p>来年頃には自作のアセットに差し替えたい．</p>
+        <h4>・給湯器開放アラート</h4>
+        <p>給湯器の閉め忘れが多く，危険であった祖母のために作成したもの．</p>
+        <p>vottを用いてタグ付けし，YOLOv8を用いて学習させた．</p>
+        <p>開閉状態を正確に判別できるまで完成したが，その頃祖母の給湯器の閉め忘れが大きく減ったため，運用は見送った．</p>
+        <div class="image">
+            <img src="images/yololearning.png" alt="yolo learning">
+            <p>YOLOv8学習の様子．ここでは最も精度の高いYOLOv8xを使用した．</p>
+        </div>
+        <h4>・自動席替え機</h4>
+        <p>中学3年生の時に遊びで作ったもの． </p>
+        <p>ボタン1つでランダムに席替えし，印刷画面まで進むExcelマクロ．</p>
+        <p>残念ながらデータは紛失した．</p>
+    </section>
+
+    <section>
+        <h2>見出し3</h2>
+        <p>書くことない</p>
+        <p>困った</p>
+        <p>何を書こうか</p>
+        <p>...</p>
+        <p class="red">misskey楽しいよ</p>
+    </section>
+</article>
+
+<footer>
+    <p>特になし</p>
+</footer>
+
 </body>
 </html>

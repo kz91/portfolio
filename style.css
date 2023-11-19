@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+body {
+    background-color: rosybrown;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+
+}
+
+article {
+    background-color: floralwhite;
+    text-align: justify;
+    border-width: 2px;
+    border-style: solid;
+    border-color: dimgray;
+    padding: 5px 40px;
+}
+
+footer {
+
+}
+
+h2 {
+    border-width: 1px;
+    border-bottom: 2px solid lightskyblue;
+}
+
+.green {
+    color: yellowgreen;
+}
+
+.red {
+    color: mediumvioletred;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image {
+    text-align: center;
+}
