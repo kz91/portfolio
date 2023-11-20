@@ -49,17 +49,16 @@ h2 {
 }
 
 img {
-    max-width: 60%;
-    height: auto;
-    display: block;
+    max-width: 70%;
     margin: 0 auto;
 }
 
 .logo {
     max-width: 200px;
-    margin: 0 0;
+    margin: 20px 20px;
 }
 .image {
     text-align: center;
+    display: inline-block;
 }
 
