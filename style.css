@@ -40,6 +40,10 @@ h2 {
     border-bottom: 2px solid lightskyblue;
 }
 
+.delete-line {
+    text-decoration: line-through;
+}
+
 .green {
     color: yellowgreen;
 }
@@ -63,3 +67,6 @@ img {
     display: inline-block;
 }
 
+.link-no-color-change {
+    color: black;
+}

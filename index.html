@@ -5,11 +5,15 @@
     <title>portfolio</title>
     <meta name="description" content="portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.ico" id="favicon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
-    <a href="/portfolio/"><img src="images/logo.png" class="logo"></a>
+    <a href="/portfolio/" data-lightbox="group"><img src="/images/logo.png" class="logo"></a>
 </header>
 
 <article>
@@ -49,29 +53,31 @@
 
     <section>
         <h2>最近作っているもの</h2>
-        <h4>・トラッカー</h4>
+        <h4>・<a href="/makingthings/vrtracker.html" class="link-no-color-change">トラッカー</a></h4>
         <p>VRで使えるトラッカーを自作しています．</p>
         <p>以下のサイトを参考にしました．</p>
         <a href="https://note.com/kirisamenanoha/n/n7e85548d2712">https://note.com/kirisamenanoha/n/n7e85548d2712</a>
         <p></p>
         <div class="image">
-            <a href="images/tracker.jpg"><img src="images/tracker.jpg" alt="tracker"></a>
+            <a href="images/tracker.jpg" data-lightbox="group"><img src="images/tracker.jpg" alt="tracker"></a>
             <p>こんなの</p>
         </div>
-        <h4>・赤石計算機</h4>
+        <h4>・<a href="/makingthings/redstonecalc.html" class="link-no-color-change">赤石計算機</a></h4>
         <p>minecraftでレッドストーン(赤石)を使って，四則演算のできる総無遅延計算機を作っています．</p>
         <p>つい最近データが飛んだので1から...</p>
         <div class="image">
-            <a href="images/minecraft-calclator.png"><img src="images/minecraft-calclator.png" alt="minecraft calculator"></a>
+            <a href="images/minecraft-calclator.png" data-lightbox="group"><img src="images/minecraft-calclator.png" alt="minecraft calculator"></a>
             <p>こんなの．手前に写っているのがバス，奥が32bit加算器と32bit減算器．</p>
         </div>
         <h4>・梅田ダンジョン(VR world)</h4>
-        <p>迷宮で名高い梅田地下街をVRで再現しようとしてます．</p>
+        <p>迷宮で名高い梅田地下街をVRで再現しようとしています．</p>
         <p>まだ道の製作段階で，ギミック等は一切ありません．</p>
         <div class="image">
             <img src="images/" alt="umeda dungeon world">
             <p>画像はまだ用意していません</p>
         </div>
+        <h4>・???</h4>
+        <p>??????????</p>
     </section>
 
     <section>
@@ -80,17 +86,17 @@
         <p>VRChat(VRプラットフォーム)上で入ることを想定した部屋．</p>
         <p>照明on/offや可変コライダー，動画プレイヤーなどのギミックも導入しているので，そこそこ住環境の良い場所になっている．</p>
         <div class="image">
-            <a href="images/vrroom.png"><img src="images/vrroom.png" alt="vr room"></a>
+            <a href="images/vrroom.png" data-lightbox="group"><img src="images/vrroom.png" alt="vr room"></a>
             <p>小さい部屋</p>
         </div>
-        <p>見ての通り，現時点では借り物のアセットで構成されている．(モデリング技術力不足)</p>
+        <p>見ての通り，現時点では借り物のアセットで構成されている．(モデリング技術力不足)
         来年頃には自作のアセットに差し替えたい．</p>
         <h4>・給湯器閉め忘れアラート</h4>
         <p>給湯器の閉め忘れが多く，危険であった祖母のために作成したもの．
         vottを用いてタグ付けし，YOLOv8を用いて学習させた．
-        開閉状態を正確に判別できるまで完成したが，その頃祖母の給湯器の閉め忘れが大きく減ったため，運用は見送った．</p>
+        開閉状態を正確に判別できるまで完成したが，その頃から祖母の給湯器の閉め忘れが大きく減ったため，運用は見送った．</p>
         <div class="image">
-            <a href="images/yololearning.jpg"><img src="images/yololearning.jpg" alt="yolo learning"></a>
+            <a href="images/yololearning.jpg" data-lightbox="group"><img src="images/yololearning.jpg" alt="yolo learning"></a>
             <p>YOLOv8学習の様子．ここでは最も精度の高いYOLOv8xを使用した．</p>
         </div>
         <h4>・自動席替え機</h4>
