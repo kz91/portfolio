@@ -22,7 +22,7 @@ article {
 footer {
     display: flex;
     background-color: darkgray;
-    margin: 10px 0px;
+    margin: 10px 0;
     border-width: 2px;
     border-style: solid;
     border-color: dimgray;
