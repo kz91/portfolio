@@ -47,7 +47,7 @@
         <h2>制作</h2>
         <h4>1, 数字分類</h4>
         <p>まず練習として、TensorFlowに標準で入っているMNISTデータセットを用いて数字を分類するプログラムを作成した。(NumLearn.py)</p>
-        <p>このプログラムでは、以下のような3層のニューラルネットワークを構築した。</p>
+        <p>このプログラムでは、以下のような3層の単純なDNNを構築した。</p>
         <ul>
             <li>入力層: 28x28の入力を1x784の1次元配列に変換</li>
             <li>中間層: 128ユニットのReLU全結合層</li>
@@ -55,13 +55,13 @@
         </ul>
         <div class="image">
             <a href="/images/NumNewral.png" data-lightbox="group"><img src="/images/NumNewral.png" alt="ニューラルネットワークの図"></a>
-            <p>ニューラルネットワークの図</p>
+            <p>数字分類DNNの図</p>
         </div>
         <p>学習の結果、数字を97.8%の精度で分類できるプログラムが完成した。</p>
         <p>畳み込み層なしで画像を97%で分類できたので、成功といえる。</p>
         <h4>2, 文字分類</h4>
         <p>次に、英字(大文字・小文字)と数字を分類するプログラムを作成した。(ChatLearn.py)</p>
-        <p>このプログラムでは、以下のような4層のニューラルネットワークを構築した。</p>
+        <p>このプログラムでは、以下のような4層のCNNを構築した。</p>
         <ul>
             <li>畳み込み層1: 32チャンネルPReLU畳み込み層とMaxPooling2Dの2x2プーリング層</li>
             <li>畳み込み層2: 64チャンネルのPReLU畳み込み層とMaxPooling2Dの2x2プーリング層</li>
@@ -70,7 +70,7 @@
         </ul>
         <div class="image">
             <a href="/images/CharNewral.png" data-lightbox="group"><img src="/images/CharNewral.png" alt="ニュr−ラルネットワークの図"></a>
-            <p>ニューラルネットワークの図</p>
+            <p>英数字分類CNNの図</p>
         </div>
         <h4>3, GUI</h4>
         <p>Tkinterで文字をマウスで書き込めるGUI</p>
@@ -90,7 +90,7 @@
 
     <section>
         <h2>結果</h2>
-        <p>約86.7%の精度で英数字62クラスに分類できた</p>
+        <p>約86.7%の精度で英数字62クラスに分類できた。</p>
     </section>
 </article>
 
