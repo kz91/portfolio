@@ -26,6 +26,13 @@
         <h4>2023/12~2024/01</h4>
     </section>
     <section>
+        <h2>制作時間</h2>
+        <ul>
+            <li>事前学習: 20h</li>
+            <li>制作時間: 20h</li>
+        </ul>
+    </section>
+    <section>
         <h2>準備</h2>
         <p>データセットにはEMNIST ByClassを選択し、手書き文字を英字(大文字・小文字)と数字の62クラスに分類する。</p>
         <p>The EMNIST Dataset</p>
@@ -36,12 +43,46 @@
     <section>
         <h2>制作</h2>
         <h4>1, 数字分類</h4>
-        <p>まず練習として、TensorFlowに標準で入っているMNISTデータセットを用いて数字を分類するプログラムを作成した。</p>
-        <p></p>
+        <p>まず練習として、TensorFlowに標準で入っているMNISTデータセットを用いて数字を分類するプログラムを作成した。(NumLearn.py)</p>
+        <p>このプログラムでは、以下のような3層のニューラルネットワークを構築した。</p>
+        <ul>
+            <li>入力層: 28x28の入力を1x784の1次元配列に変換</li>
+            <li>中間層: 128ユニットのReLU全結合層</li>
+            <li>出力層: 10ユニットのSoftmax全結合層</li>
+        </ul>
+        <div class="image">
+            <a href="/images/NumNewral.png" data-lightbox="group"><img src="/images/NumNewral.png" alt="ニューラルネットワークの図"></a>
+            <p>ニューラルネットワークの図</p>
+        </div>
+        <p>学習の結果、数字を97.8%の精度で分類できるプログラムが完成した。</p>
+        <p>畳み込み層なしで画像を97%で分類できたので、成功といえる。</p>
         <h4>2, 文字分類</h4>
-        <p></p>
+        <p>次に、英字(大文字・小文字)と数字を分類するプログラムを作成した。(ChatLearn.py)</p>
+        <p>このプログラムでは、以下のような4層のニューラルネットワークを構築した。</p>
+        <ul>
+            <li>畳み込み層1: 32チャンネルPReLU畳み込み層とMaxPooling2Dの2x2プーリング層</li>
+            <li>畳み込み層2: 64チャンネルのPReLU畳み込み層とMaxPooling2Dの2x2プーリング層</li>
+            <li>全結合層1: 128ユニットのPReLU全結合層</li>
+            <li>全結合層2: 62ユニットのSoftmax全結合層</li>
+        </ul>
+        <div class="image">
+            <a href="/images/CharNewral.png" data-lightbox="group"><img src="/images/CharNewral.png" alt="ニュr−ラルネットワークの図"></a>
+            <p>ニューラルネットワークの図</p>
+        </div>
         <h4>3, GUI</h4>
         <p>Tkinterで文字をマウスで書き込めるGUI</p>
+        <p>ここに文字を書き込み、「distinction」ボタンを押すと画像が書き出され、その画像を用いて分類処理を行う。</p>
+        <p>各ボタンの説明</p>
+        <ul>
+            <li>write: 書き込みモード</li>
+            <li>erase: 消去モード</li>
+            <li>clear all: キャンバス全消去</li>
+            <li>distinction: 画像判別開始</li>
+        </ul>
+        <div class="image">
+            <a href="/images/GUI.png" data-lightbox="group"><img src="/images/GUI.png" alt="TkinterGUI"></a>
+            <p>TkinterGUI</p>
+        </div>
     </section>
 
     <section>
