@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+body {
+    background-color: rosybrown;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    background-color: whitesmoke;
+    text-align: justify;
+    font-family: "M PLUS 1p", sans-serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: dimgray;
+    padding: 5px 40px;
+}
+
+.page-article {
+
+}
+
+footer {
+    display: flex;
+    background-color: darkgray;
+    margin: 10px 0;
+    border-width: 2px;
+    border-style: solid;
+    border-color: dimgray;
+    padding: 5px 40px;
+}
+
+.page-footer {
+
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    text-align: left;
+}
+
+h2 {
+    border-width: 1px;
+    border-style: none solid solid none;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0D2A52;
+}
+
+p {
+    line-height: 1.7;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Navigation style */
+.main-nav {
+    display: flex;
+    text-transform: uppercase;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.main-nav li {
+    margin-left: 30px;
+}
+
+.main-nav a {
+    color: black;
+}
+/* --------------------------- */
+
+.delete-line {
+    text-decoration: line-through;
+}
+
+.green {
+    color: yellowgreen;
+}
+
+.red {
+    color: mediumvioletred;
+}
+
+img {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 200px;
+    margin: 20px 20px;
+}
+
+.image {
+    text-align: center;
+    display: inline-block;
+}
+
+.link-no-color-change {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}

@@ -2,21 +2,23 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>portfolio</title>
+    <title>kz's portfolio</title>
     <meta name="description" content="portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.ico" id="favicon">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+        <link rel="icon" href="images/favicon.ico" id="favicon">
+    <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </head>
 <body>
-<header>
+<header class="page-haeder">
     <a href="portfolio/"><img src="images/logo.png" class="logo"></a>
 </header>
 
-<article>
+<article class="page-article">
     <section>
         <h2>自己紹介</h2>
         <p>某高専2年生</p>
@@ -25,20 +27,41 @@
 
     <section>
         <h2>スキル</h2>
-        <ul>
-            <li>Python…500時間</li>
-            <li>C…50時間</li>
-            <li>HTML/CSS…10時間</li>
-        </ul>
+        <div class="container">
+            <div class="item image">
+                <img src="images/index/python-logo.svg" alt="Python-logo">
+                <p>Python</p>
+            </div>
+            <div class="item image">
+                <img src="images/index/c-logo.svg" alt="C-lang-logo">
+                <p>C</p>
+            </div>
+            <div class="item image">
+                <img src="images/index/html-logo.svg" alt="HTML-logo">
+                <p>HTML</p>
+            </div>
+            <div class="item image">
+                <img src="images/index/css-logo.svg" alt="CSS-logo">
+                <p>CSS</p>
+            </div>
+        </div>
     </section>
     <section>
         <h2>勉強中/勉強したいもの</h2>
-        <ul>
-            <li>深層学習(特に自然言語処理)</li>
-            <li>ブロックチェーン</li>
-            <li>VR・AR</li>
-            <li>Unity</li>
-        </ul>
+        <div class="container">
+            <div class="item image">
+                <img src="images/index/javascript-logo.svg" alt="JavaScript-logo">
+                <p>JavaScript</p>
+            </div>
+            <div class="item image">
+                <img src="images/index/unity-logo.svg" alt="Unity-logo">
+                <p>Unity</p>
+            </div>
+            <div class="item image">
+                <img src="images/index/blender-logo.svg" alt="Blender-logo">
+                <p>Blender</p>
+            </div>
+        </div>
     </section>
 
     <section>
@@ -108,7 +131,7 @@
     </section>
 </article>
 
-<footer>
+<footer class="page-footer">
     <div class="footer-left">
         <h4>author: kz</h4>
         <p></p>
