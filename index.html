@@ -11,21 +11,62 @@
     <meta property="og:title" content="kz's portfolio">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://kz91.githunb.io/portfolio/images/index/logo.svg">
+    <link rel="icon" href="images/favicon.ico" type="image/svg+xml">
     <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
-        <link rel="icon" href="images/favicon.ico" type="image/svg+xml">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/external.css">
     <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
 </head>
 <body>
 <header class="page-haeder">
-    <a href="portfolio/"><img src="images/logo.png" class="logo"></a>
+    <a href="portfolio/"><img src="images/logo.svg" class="logo"></a>
+    <nav class="nav-menu">
+        <div class="menu-list">
+            <div class="menu-item">
+                <a href="https://kz91.github.io/portfolio/">Home</a>
+            </div>
+            <div class="menu-item">
+                <a href="https://kz91.github.io/portfolio/portfolio.html">Portfolio</a>
+            </div>
+            <div class="menu-item">
+                <a href="#">About me</a>
+            </div>
+            <div class="menu-item drop-menu">
+                <a href="#">Contacts</a>
+                <div class="drop-menu-list">
+                    <div class="drop-menu-item">
+                        <a href="mailto:kznyan91@gmail.com">Gmail</a>
+                    </div>
+                    <div class="drop-menu-item">
+                        <a href="https://misskey.io/@kznft" target="_blank" rel="noopener noreferrer">misskey.io</a>
+                    </div>
+                    <div class="drop-menu-item">
+                        <a href="https://discordapp.com/users/kz91." target="_blank" rel="noopener noreferrer">Discord</a>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    <!--
+    <nav class="nav-menu">
+        <ul class="nav-contents">
+            <li>
+                <a href="#">contacts</a>
+                <ul class="footer-contacts">
+                    <li>email: <a href="mailto:kznyan91@gmail.com">kznyan91@gmail.com</a></li>
+                    <li>misskey.io: <a href="https://misskey.io/@kznft" target="_blank" rel="noopener noreferrer">@kznft@misskey.io</a></li>
+                    <li>Discord: <a href="https://discordapp.com/users/kz91." target="_blank" rel="noopener noreferrer">kz91.</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    -->
 </header>
 
-<div class="contents">
-    <article class="page-article">
+<div class="contents wrapper">
+    <article>
         <section>
             <h2>自己紹介</h2>
             <p>某高専2年生</p>
@@ -142,36 +183,29 @@
         </section>
     </article>
 
-    <aside class="page-aside">
-        <h3 class="aside-title">latest</h3>
-        <ul class="aside-menu">
-            <li>article1</li>
-            <li>article2</li>
-            <li>article3</li>
-        </ul>
-        <h3 class="aside-title">about me</h3>
-        <ul class="aside-menu">
-            <li>article1</li>
-            <li>article2</li>
-            <li>article3</li>
-        </ul>
+    <aside>
+        <div>
+            <h3 class="aside-title">latest</h3>
+            <ul class="aside-menu gnavi">
+                <li><a href="#">article1</a></li>
+                <li><a href="#">article2</a></li>
+                <li><a href="#">article3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="aside-title">about me</h3>
+            <h4>kz</h4>
+            <a href="images/icon.png"><img src="images/icon.png"</a>
+            <p>misskeyとVRの民</p>
+            <p>高専2年生</p>
+        </div>
     </aside>
 </div>
 
-<footer class="page-footer">
-    <div class="footer-left">
-        <h4>author: kz</h4>
-        <p></p>
-        <p></p>
-        <p></p>
-    </div>
-    <div class="footer-right">
-        <h4>連絡先</h4>
-        <p>email: <a href="mailto:kznyan91@gmail.com">kznyan91@gmail.com</a></p>
-        <p>misskey.io: @kznft@misskey.io</p>
-        <p>Discord: kz91.</p>
-    </div>
+<footer>
+    <p>@2023 kz</p>
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="javascript/script.js"></script>
 </body>
 </html>
