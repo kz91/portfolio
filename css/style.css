@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: dimgray;
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+
+
+/*========== header ==========*/
+header {
+    width: 100%;
+    display: flex;
+    padding: 0 5px;
+    background: #0d1117;
+    align-items: center;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+/*========== article ==========*/
+article {
+    width: 74%;
+    background-color: whitesmoke;
+    text-align: justify;
+    padding: 5px 40px;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+
+
+/* aside */
+aside {
+    width: 22%;
+    background-color: aliceblue;
+    padding: 0 30px 0;
+}
+
+aside h4, p, img {
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.aside-title {
+    font-size: 1.375rem;
+    padding: 0 8px 4px;
+    border-bottom: 2px darkblue solid;
+    font-weight: bold;
+}
+
+.aside-menu {
+    margin-bottom: 40px;
+    padding: 0 8px 8px;
+    list-style: none;
+}
+
+.aside-menu li {
+    width: 100%;
+    border-bottom: 1px black solid;
+    padding: 8px 0 8px 8px;
+}
+
+.aside-menu a {
+    color: lightslategray;
+    padding: 1px;
+    display: block;
+}
+
+.aside-menu a:hover {
+    color: black;
+}
+
+
+
+/*========== footer ==========*/
+footer {
+    width: 100%;
+    display: flex;
+    background-color: #283446;
+    padding: 10px 0;
+    margin: 0;
+    justify-content: center;
+    position: relative;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+
+
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+h2 {
+    border-width: 1px;
+    border-style: none solid solid none;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #0D2A52;
+}
+
+p {
+    line-height: 1.7;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+
+/* --------------------------- */
+
+.delete-line {
+    text-decoration: line-through;
+}
+
+img {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 160px;
+    height: auto;
+    margin: 20px 20px 15px;
+}
+
+.image {
+    text-align: center;
+    display: inline-block;
+}
+
+.link-no-color-change {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* favicon bg setting(svg)*/
+path {
+    fill: #0bd;
+}
+@media (prefers-color-scheme: dark) {
+    path {
+        fill: #faa;
+    }
+}
