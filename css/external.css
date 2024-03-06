@@ -1,0 +1,276 @@
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background:#333;
+    text-align:center;
+    color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+#container{
+    width:100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+a{
+    color: #333;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/*==================================================
+共通　横並びのための設定
+===================================*/
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin: 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    padding: 5px 70px 0 0;
+    text-decoration: none;
+    color: #333;
+}
+
+/*==================================================
+　5-3-11 左右から線が伸びて枠線になる
+===================================*/
+
+.gnavi li{
+    /*線の基点とするためrelativeを指定*/
+    position: relative;
+    margin:0 0;
+}
+
+/*線の基点位置*/
+.gnavi li::before,
+.gnavi li::after{
+    content:"";
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    /*線の形状*/
+    width: 0;
+    height:2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all 0.15s linear;
+    transition-delay: 0s;
+}
+
+.gnavi li::before{
+    right: 0;
+    top: 0;
+}
+.gnavi li::after{
+    left: 0;
+    bottom: 0;
+}
+
+/*線の基点位置2 spanタグ*/
+
+.gnavi li span{
+    display: block;
+}
+
+.gnavi li span::before,
+.gnavi li span::after{
+    content:"";
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    /*線の形状*/
+    width:2px;
+    height:0;
+    background: #0481A2;
+    /*アニメーションの指定*/
+    transition: all 0.3s linear;
+}
+
+.gnavi li span::before{
+    left: 0;
+    top: 0;
+}
+.gnavi li span::after{
+    right: 0;
+    bottom: 0;
+}
+
+/*現在地とhoverした際の線の変化*/
+
+.gnavi li.current::before,
+.gnavi li.current::after,
+.gnavi li:hover::before,
+.gnavi li:hover::after{
+    width: 100%;/*横幅を100%に*/
+}
+
+.gnavi li.current span::before,
+.gnavi li.current span::after,
+.gnavi li:hover span::before,
+.gnavi li:hover span::after{
+    height: 100%;/*縦幅を100%に*/
+}
+
+/*リンクの形状*/
+#page-top a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#942D2F;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:0.6rem;
+    transition:all 0.3s;
+}
+
+#page-top a:hover{
+    background: #777;
+}
+
+/*リンクを右下に固定*/
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom:10px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+    animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+    animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+
+
+/*========== ナビゲーションメニュー ==========*/
+.nav-menu {
+    color: #fff; /* メニューテキストの色 */
+    margin: 40px 20px 0;
+}
+.menu-list {
+    display: flex;
+    justify-content: center; /* メニューアイテムを中央揃えに */
+    list-style: none;
+}
+.menu-item {
+    border-left: 1px solid #fff; /* メニューアイテムの左ボーダー */
+    position: relative;
+    transition: background-color .3s; /* 背景色の変化をアニメーション化 */
+}
+.menu-item:last-child {
+    border-right: 1px solid #fff; /* 最後のメニューアイテムの右ボーダー */
+}
+
+/* メニューアイテムのホバースタイル */
+.menu-item:hover .drop-menu-list {
+    transform: scaleY(1); /* ドロップダウンメニューの表示 */
+}
+.menu-item:hover {
+    background-color: #696969; /* メニューアイテムのホバー時の背景色 */
+    transition: background-color .3s; /* 背景色の変化をアニメーション化 */
+}
+.drop-menu-item:hover {
+    opacity: .8; /* ドロップダウンメニューアイテムのホバー時の不透明度 */
+    transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
+}
+
+.menu-item a {
+    align-items: center;
+    color: #fff; /* メニューアイテム内のリンクテキストの色 */
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-decoration: none; /* リンクの下線を非表示 */
+    width: 120px;
+}
+
+/* ドロップダウンメニュー */
+.drop-menu {
+    position: relative;
+}
+.drop-menu-list {
+    left: 0;
+    position: absolute;
+    top: 100%;
+    transform: scaleY(0); /* ドロップダウンメニューの非表示 */
+    transform-origin: center top; /* 変形を適応する基準を設定 */
+    transition: transform .3s; /* 表示の変化をアニメーション化 */
+    width: max-content;
+    z-index: 1;
+    list-style: none;
+}
+.drop-menu-item {
+    background-color: #333; /* ドロップダウンメニューの背景色 */
+    transition: opacity .3s; /* 不透明度の変化をアニメーション化 */
+}
