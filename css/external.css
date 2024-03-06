@@ -194,7 +194,8 @@
 /*========== ナビゲーションメニュー ==========*/
 .nav-menu {
     color: #fff; /* メニューテキストの色 */
-    margin: 46px 80px 0;
+    margin-left: auto;
+    margin-right: 40px;
 }
 .menu-list {
     display: flex;
