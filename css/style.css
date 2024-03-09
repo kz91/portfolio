@@ -31,7 +31,7 @@ header {
 
 /*========== article ==========*/
 article {
-    width: 74%;
+    width: 76%;
     background-color: whitesmoke;
     text-align: justify;
     padding: 5px 40px;
@@ -45,7 +45,7 @@ article p {
 
 /* aside */
 aside {
-    width: 22%;
+    width: 24%;
     background-color: aliceblue;
     padding: 0 30px 0;
 }
@@ -105,8 +105,7 @@ footer p {
 
 .contents {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    justify-content: center;
 }
 
 h2 {
@@ -186,7 +185,7 @@ img {
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 4%;
 }
