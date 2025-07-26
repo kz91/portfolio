@@ -1,21 +1,108 @@
+/* basics */
+body {
+    margin: 0;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #222;
+    background-color: #fff;
+}
+
 h2 {
     font-family: "M PLUS 1p Medium", sans-serif;
     font-style: normal;
-    padding: 5px 15px;
-    border-left: darkgray solid 1px;
-    border-bottom: darkgray solid 3px;
+    font-size: 1.6rem;
+    padding: 8px 15px;
+    border-left: 3px solid #555;
+    border-bottom: 4px solid #555;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    color: #333;
 }
 
 p {
-    font-family: "M PLUS 1p", sans-serif;
+    font-family: inherit;
     font-style: normal;
+    line-height: 1.8;
+    margin-bottom: 1.25em;
+    color: #333;
+}
+
+main {
+    margin: 15px 20px;
+    padding: 15px 25px;
 }
 
 
-article {
-    margin: 10px;
+
+/* header */
+header {
+    background-color: #f8f9fa;
+    padding: 25px 30px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    color: #212529;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+
+/* page-title */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.title-container h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #222;
+}
+
+.post-date {
+    font-size: 1em;
+    color: #666;
+    font-style: italic;
+}
+
+
+
+/* inline code and block code */
+code {
+    font-family: "SF Mono", "Consolas", "Courier New", monospace;
+    background-color: #f0f0f0;
+    padding: 0.25em 0.5em;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #c7254e;
+}
+
+pre {
+    font-family: "SF Mono", "Consolas", "Courier New", monospace;
+    background-color: #2d2f38;
+    color: #abb2bf;
+    padding: 1.2em;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.5em;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
 
 
 
@@ -23,12 +110,14 @@ article {
 .prog-lang-tile-container {
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
 }
 
 .prog-lang-tile-item {
-    outline: black solid 2px;
-    margin: 10px;
-    padding: 10px;
+    outline: 2px solid #000;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
 }
 
 .prog-lang-img {
@@ -39,64 +128,79 @@ article {
 
 
 
+/* timeline */
 .timeline {
     list-style: none;
-    margin: 10px 0;
+    margin: 15px 0;
+    padding: 0;
 }
 
 .timeline > li {
     overflow: hidden;
-    margin: 0;
+    margin: 0 0 1.5em;
     position: relative;
 }
+
 .timeline-date {
-    width: 110px;
+    width: 120px;
     float: left;
     padding: 10px 0;
-    border-right: 3px lightblue solid;
+    border-right: 3px solid #4a90e2;
+    color: #4a90e2;
+    font-weight: 600;
+}
 
-}
 .timeline-content {
-    width: 75%;
+    width: calc(100% - 130px);
     float: left;
-    padding-left: 25px;
+    padding-left: 30px;
     padding-top: 10px;
+    color: #333;
 }
+
 .timeline-content:before {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     background: #1760a0;
     position: absolute;
-    left: 103px;
-    top: 15px;
+    left: 113px;
+    top: 18px;
     transform: rotate(45deg);
+    border-radius: 2px;
 }
 
 
 
-/* page-tile */
-.page-tile-container {
-    display: flex;
-    flex-wrap: wrap;
+/* list-style */
+ul {
+    padding-left: 1.5em;
+    margin-left: 0;
+    list-style-position: outside;
+    color: #333;
 }
 
-.page-tile-item {
-    background-color: #1760a0;
-    color: white;
-    margin: 10px;
-    padding: 10px;
+ul ul {
+    margin-left: 2.5em;
+}
+
+li {
+    margin-bottom: 0.7em;
 }
 
 
 
 /* footer */
 footer {
-    background: black;
+    background: #111;
     text-align: center;
-    padding: 26px 0;
+    padding: 30px 0;
+    margin-top: 40px;
+    border-top: 4px solid #444;
 }
 
 footer p {
-    color: white;
+    color: #ddd;
+    margin: 0;
+    font-size: 0.9em;
 }
